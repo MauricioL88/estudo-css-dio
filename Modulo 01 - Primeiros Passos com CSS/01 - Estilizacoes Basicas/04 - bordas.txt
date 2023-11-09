@@ -1,0 +1,52 @@
+- Tamanho da borda
+
+Define o tamanho da borda, utilizando "border-width".
+_________
+
+
+- Estilo da borda
+
+Define o estilo da bora, utilizando "border-style:".
+
+Valores >
+double;
+groove;
+ridge;
+inset;
+outset;
+dotted;
+solid;
+dashed;
+_________
+
+
+- Cor da borda
+
+Utiliza "border-color:".
+_________
+
+
+- Arredondando os Cantos com a Propriedade Border Radius
+
+Utiliza o "border-radius:"
+
+Valores >
+em 50% torna o quadradro em um círculo
+_________
+
+
+- Propriedade Border Image Source
+
+Define uma imagem como borda, utilizando o "border-image-source: url('endeero-da-imagem');",
+para ser ativada é necessário chamar o recurso "border:".
+
+Valores >
+Além do caminho da imagem, pode adicionar o recurso de gradiente.
+_________
+
+
+- Propriedade Border Image Slice
+- Propriedade Border Image Width
+- Propriedade Border Image Repeat
+- Propriedade Border Image Outset p1
+- Propriedade Border Image Outset p2
