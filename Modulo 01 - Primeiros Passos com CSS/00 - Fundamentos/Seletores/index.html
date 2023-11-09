@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        /*
+        * SELETORES: definem em quais elementos nós vamos aplicar o CSS
+        *
+        *
+        *
+        * 1. Seletor de Tag/Tipo
+        */
+        h1,
+        h2 {
+            background: darkblue;
+            color: lightgreen;
+        }
+
+        div {
+            background: lightblue;
+            color: darkblue;
+        }
+
+        li {
+            background: lightgreen;
+        }
+
+        /*        
+        * 2. Seletor de Id
+        */
+        #texto-boas-vindas {
+            background: darkred;
+            color: lightgreen;
+        }
+
+        #explicando-seletores {
+            background-color: lightgreen;
+            color: darkblue;
+        }
+
+        /*
+        * 3. Seletor de Classes
+        */
+        .seletores-mais-comuns {
+            background: darkblue;
+            color: lightgreen;
+        }
+
+        .texto-maiusculo {
+            text-transform: uppercase;
+        }
+
+        .streams {
+            background: blue;
+        }
+
+        /*
+        * 4. Seletor Universal
+        */
+        * {
+            background: lightblue;
+        }
+
+        /*
+        * 5. Seletor de Atributo
+        * É possível manipular:
+        * Alterar especificamente quando o atributo tiver valor -> [atributo="valor"]
+        * Alterar quando o valor do atributo é composto (busca todos valor com nome comum) -> [atributo~="valor ******"]
+        * Alterar quando o valor do atributo é composto unido por hífen (busca todos valor com nome comum) -> [atributo|="valor-******"]
+        * 
+        */
+        [title] {
+            background: darkblue;
+            color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Seletores CSS</h1>
+    <p id="texto-boas-vindas">Bem vindo!</p>
+    <p id="explicando-seletores">No CSS nós possuimos os seletores por ID</p>
+    <div>
+        <ul>
+            <li><b class="seletores-mais-comuns">Seletor por Tipo:</b> Busca elementos por uma tag HTML específica.</li>
+            <li><b class="seletores-mais-comuns">Seletor por ID (#):</b> Busca elementos através do atributo "id".</li>
+            <li><b class="seletores-mais-comuns texto-maiusculo">Seletor por Classe (.):</b> Busca elementos através do
+                atributo
+                "class".</li>
+            <li><b class="seletores-mais-comuns">Seletor Universal (*):</b> Seleciona todos os elementos HTML</li>
+            <li><b class="seletores-mais-comuns">Seletor Atributo ([atrib]):</b> Seleciona elementos que possuem um
+                atributo específico em nosso
+                documento HTML e conseguimos também buscar atributos com valor específico.</li>
+        </ul>
+    </div>
+
+    <h2>Links</h2>
+    <div>
+        <ul class="streams">
+            <li>
+                <a title="netflix" target="_blank" href="https://www.netflix.com/br/">Netflix</a>
+            </li>
+            <li>
+                <a title="prime" target="_blank" href="https://www.primevideo.com/">Prime Video</a>
+            </li>
+            <li>
+                <a title="spotify" target="_blank" href="https://open.spotify.com/intl-pt">Spotify</a>
+            </li>
+            <li>
+                <a title="disney+" target="_blank" href="https://www.disneyplus.com/pt-br">Disney Plus</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

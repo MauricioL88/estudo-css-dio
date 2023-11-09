@@ -1,0 +1,103 @@
+- Redimensionando imagens:
+
+Recurso para dimensionar a imagem dentro do elemento, é utilizado o recurso "background-size:".
+
+Valores >
+auto: exibe a imagem no seu tamanho padrão, podendo sofrer recorte;
+cover: redimensiona a imagem para caber no elemento, podendo deixar espaço vago na altura ou lagura;
+contain: redimensiona a imagem para caber no elemento, podendo repetir a imagem para preencher os espaços vagos;
+valor: pode definir manualmente o valor da largura (width) em px, %...;
+valores: pode definir manualmente os valores da largura e altura;
+camadas: pode definir manualmente os valores dos parâmetros. ex: background-size: (url('caminho-da-imagem'), url('caminho-da-imagem'));
+_________
+
+
+- Reptição de imagens:
+
+Depende da propriedade dada à imagem, ela pode se repitir no elemento aondo foi invocado, por isso é utilizado o recurso "background-repeat:".
+
+Valores >
+repeat: tem o comportamento de repetição em todas as direções (alt, larg) para caber no tamanho do elemento;
+repeat-x: define o comportamento de repetição somente no eixo "x" (horizontalmente);
+repeat-y: define o comportamento de repetição somente no eixo "y" (verticalmente);
+space: define o comportamento de repetição adicionando um espaço entre as imagens evitando o corte da própria imagem;
+round: define o comportamento de repetição redimencionando a imagem sem realizar o corte;
+no-repeat: não realiza a repetição da imagem;
+combinação de valores: ex - "background-repeat: repeat, round;"
+_________
+
+
+- Posicionamento das Imagens de Fundo:
+
+Define o posionamento da imagem no elemento, utilizando o recurso "background-position:".
+
+Valores >
+Pode ser adicionado valores manualmente, como: top, bottom, leff, right ou center, ou definindo seu tamanho em "px" ou "%",
+ou combinar valores nos eixos "x" e "y";
+_________
+
+
+- Propriedade Background Attachment:
+
+Propriedade que define o comportamento da imagem em relação à janela do navegador, utilizando o recurso "background-attachment:".
+
+Valores >
+fixed: define o comportamento fixo no fundo da tela, independentemente posicionamento da página;
+scroll: define o comportamento de movimento junto com a página;
+local: define o comportmanento de movimento junto com o conteúdo da página;
+_________
+
+
+- Propriedade Background Origin
+
+Define o ponto de origem de uma imagem de fundo, utilizando o recurso "background-origin:".
+
+Valores >
+padding-box: faz com o que a imagem respeite a definição do padding dentro do elemento, se originanando no limite do padding;
+border-box: faz o preenchimento do fundo não respeitando a borda;
+content-box: faz com o que a imagem respeite a definição da borda e do padding;
+_________
+
+
+- Prorpiedade Background Clip
+
+Funciona de forma similar ao "background-origin" com adição do recurso de preenchimento do no fundo do texto, utilizando a sintaxe:
+"background-clip: text;"
+
+ex: #text {
+    -webkit-background-clip: text; // para funcionamento no chrome;
+    color: transparent;
+    background-clip: text;
+    background-image: "pode-utilizar-o-recurso-css3-patterns";
+}
+_________
+
+
+- Mesclagem
+
+Realiza a mistura das cores com imagens no elemento, utilizando o recurso: "background-blend-mode:".
+
+Valores >
+multiply;
+screen;
+overlay;
+entre outros...;
+
+ex: .exemplo {
+    width: 300px;
+    height: 300px;
+    border: 15px dashed palegreen;
+    color: white;
+    padding: 30px;
+    background-color: orange;
+    background-image: url('caminho-da-imagem');
+    background-blend-mode: multiply;
+}
+_________
+
+
+- Prorpiedade Background
+
+Recurso atalho para chamar todos os otros recursos explicados anteriormente, utilizando "background:".
+
+ex: background: // image position / size repeat attachment;

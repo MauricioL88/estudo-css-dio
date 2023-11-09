@@ -1,0 +1,39 @@
+RGB:
+- através da propriedade "color";
+- cores bases: r(vermelho) g(verde), b(azul);
+- na função rgb existe 3 parâmetros que vão de 0 à 255 (ou por %: 0 à 100) definindo a tonalidade da cor, podendo realizar a mistura;
+- declaração: rgb(0,0,0) -> resulta "Preto" | rgb(255,255,255) -> resulta "Branco";
+
+RGBA:
+- é uma extensão do recurso RGB com o acréscimo do canal "Alpha" que dá o tom de opacidade nas cores;
+- a tonalidade varia de 0.0 (transprente) à 1 (opaco);
+- declaração: rgba(0,0,0,1) -> resulta "Preto";
+
+HEXADECIMAL:
+- composto por 6 digitos, nos quais os 2 iniciais é da cor vermelha, 2 centrais o verde e 2 finais da cor azul;
+- seu parâmetros são definidos por letras e números que vão de "A à F" e "0 à 9";
+- é utilizado o "#" na sua declaração;
+- declaração: #000000 -> resulta "Preto" | #ffffff (#FFFFFF) -> "Branco";
+- para trabalhar com transparêcia é necessário adicionar mais 2 finais, onde 00 (tranparente) FF ou ff (opaco);
+- declaração tranparência: #0000FF77 -> resulta "Azul com mais ou menos 50% de transparência";
+
+HSL:
+- composto por:
+	- H (hue: matiz -> grau de cores -> 0 à 360 -> 0 e 360 = vermelho, 120 = verde, 240 = azul);
+		- vermelho: 0 e 360;
+		- laranja: 30
+		- amarelo: 60
+		- verde amarelado: 90
+		- verde: 120
+		- verde azulado: 150
+		- ciano: 180
+		- azul claro: 210
+		- azul: 240
+		- violeta: 270
+		- magenta: 300
+		- rosa: 330
+	- S (saturation: saturação -> tonalidade de cinza -> 0% à 100% -> 0% = tom de cinza, 100% = a cor pura);
+	- L (lightness: luminosidade -> luz da cor -> 0% à 100% -> 0% = preto, 100% = branco);
+- declaração: hsl(240, 100%, 50%) -> resulta "Azul"
+- transparência: assim com o rgba, necessário preencher o canal "Alpha" com os valores entre 0.0 (transparente) à 1.0 (opaco);
+- declaração transparência: hsla(180, 100%, 40%, 0.5) -> resulta num "Ciano com 50% de transparância";

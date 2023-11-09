@@ -1,0 +1,25 @@
+PROPRIEDADE OBJECT-FIT:
+
+- usado para delimitar o comportamento da imagem ou vídeo em uma estrutura HTML (div / container);
+- declaração: especificar estrutura, id ou classe {
+	object-fit: "valor";
+}
+
+div {
+	width: 200px;
+	height: 300px;
+	border: solid 5px blue;
+}
+- valores:
+	- fill: valor padrão, preenche o espaço da estrutura, podendo distorcer a imagem;
+	- contain: mantem a proporção original da imagem, mas pode ser redimensionada para caber na estrutura (podendo deixar espaço vago);
+	- cover: preenche o espaço delimitado da estrutura, podendo recortar a imagem;
+	- none: ignora as proporções do elemento pai e exibe o seu tamanho de origem, podendo recortar a imagem dentro da estrutura;
+	- scale-down: seleciona qual dos valores (contain ou none) tem a menor resolução para aplicar;
+
+
+OBJECT-POSITION:
+
+- usado para especificar a posição da imagem ou video nos sentidos verticais ou horizontais;
+- pode ser usado as unidades de medidas: "px", "%" nos eixos X (horinzontal) e Y (vertical) ou palavras como "right","left" e "center" (horizontal) e "top","bottom" e "center" (vertical);
+- declaração: object-position: X Y;

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores</title>
+    <style>
+        /*
+            Combinadores: qual o tipo de relação entre 2 seletores.
+            1. Combinador descendente (espaço) -> obedeçendo a ordem de pai para filho.
+            2. Combinador filho (>) -> descedencia direta (seletor pai > filho).
+            3. Combinador irmão adjecente (+) -> atua especificamente na tag posterior a tag selecionada (ul + p {background: red;})
+            4. Combinador irmão geral (~) -> -> atua em toda tag posterior a tag selecionada
+
+            [SELETOR] [COMBINADOR] [SELETOR]
+        */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="fundo-verde" id="lista-01">
+            <div>Item 1</div>
+            <ul>
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-verde" id="lista-02">
+            <div>Item 2</div>
+            <ul>
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-azul" id="lista-03">
+            <div>Item 3</div>
+            <ul>
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Texto Exemplo 01</p>
+    <p>Texto Exemplo 02</p>
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+ANOTAÇÕES CSS:
+
+## Sites para pesquisa >
+css3 patterns galery: https://projects.verou.me/css3patterns/
